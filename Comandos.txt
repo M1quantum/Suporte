@@ -1,0 +1,23 @@
+    verdadeiro
+if (condição){
+    resposta  ......Simples
+}
+
+
+        v
+if (condição){
+
+    instrução 1
+}else{      ......Composta
+   
+    instrução 2
+}
+
+
+
+if (condição){
+}else if (condição){
+}else if (condição){ .........Encadeada
+}else if (condição){
+}else{
+}
