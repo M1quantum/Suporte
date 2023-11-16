@@ -1,0 +1,60 @@
+#include <iostream>
+#include <locale>
+using namespace std;
+/* tipo de retorno nome(lista de parâmetros*/
+
+
+int fatorial(int meunumero){
+	int fat = 1;
+	
+	for(int i=1; i <= meunumero; i++){
+		fat = fat * i;
+	}
+	
+	
+	
+	return fat;
+}
+
+
+
+//função sem retorno
+void mensagem(string nome){
+	cout << "Olá, " << nome << " Seja bem vindo(a)! ";
+}
+
+
+float media(int n1, int n2){
+	int m;
+	
+	m= (float) (n1+n2)/2;
+	
+	return m;
+}
+
+int main() {
+	setlocale(LC_ALL, "Portuguese");
+	int meunumero, resultado;
+	
+	
+	mensagem("Nilton");
+	cout << " Digite um número para o calculo de fatorial \n ";
+	cin >> meunumero;
+	
+	
+	/*Forma de chamada da função 1*/
+	resultado = fatorial(meunumero);
+	cout << " Fatorial: " << resultado << endl;
+	
+	
+	
+	
+	
+	/* Forma 2*/
+	cout << " Fatorial2: " << fatorial(meunumero) << endl;
+	cout << " Média: " << media(10,20) << endl;
+	
+	
+	
+	return 0;
+}
