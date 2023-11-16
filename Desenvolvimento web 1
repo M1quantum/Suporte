@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <script src="js/Aulajavascript.js">
+        </script>
+    </head>
+    <body>
+        <h1>Aula de JavaScript</h1>
+    </body>
+</html>
+
+
+Codigojs: var variavel = 10;
+alert(variavel);
+
+//Númericas
+var numInt = 5 //integer
+var numFlo = 10.5 //Float
+
+//Alfanúmericas
+var textoCha = "a"
+var textoStr = "Texto longo"
+
+//Booleanas
+var logicoBoo = false
+
+//Indefinidas
+var nulasNul = null
+var indefinida
+
+console.log(numInt)
+console.log(numFlo)
+console.log(textoCha)
+console.log(textoStr)
+console.log(logicoBoo)
+console.log(nulasNul)
+console.log(indefinida)
+
+var nome = prompt("Digite seu nome: ")
+var idade = prompt("Digite sua idade: ")
+var open_h2 = "<h2>"
+var close_h2 = "</h2>"
+document.write(open_h2+"Nome: "+nome+close_h2)
+document.write(open_h2+"Idade: "+idade+close_h2)
+
+var num1 = prompt("Número 1")
+var num2 = prompt("Número 2")
+
+
+num1 = parseInt(num1)
+num2 = parseInt(num2)
+//exibir os número em ordem crescente
+
+if (num1 > num2){
+    aux = num1
+    num1 = num2
+    num2 = aux
+}
+
+
+document.write(num1)
+document.write("<br>")
+document.write(num2)
+
+
+================================================================
+Programação 2:
+Hello world
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello World!</h1>   
+</body>
+</html>
+
+
+Tags principais: <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags mais comuns para páginas HTML</title>
+</head>
+<body>
+    <h1>Títulos</h1>
+    <p>Parágrafos</p>
+    <p>Quando for necessário uma quebra de linha utiliza-se o BR, essa Tag<br> cria uma quebra de linha, ou seja um Break Row.</p>
+    <hr>
+    <p>Listas ordenadas das Tags</p>
+    <ol type="a">
+        <li>h1-h6: títulos.</li>
+        <li>p: parágrafo.</li>
+        <li>strong: negrito.</li>
+        <li>small: texto pequeno.</li>
+        <li>sub: subscrito.</li>
+        <li>sup: sobrescrito.</li>
+        <li>em: enfase.</li>
+        <li>del: texto excluído.</li>
+        <li>ins: texto inserido.</li>
+        <li>ol: listas ordenadas, li para os itens da lista.</li>
+        <li>ul: listas não ordenadas, li para os itens da lista.</li>
+        <li>br: quebra de linha.</li>
+        <li>hr: linha horizontal.</li>
+        <li>abbr: Abreviações.</li>
+        <li>address: usado para informações de contatos de autores de artigos.</li>
+        <li>bdo: define a direção do texto.</li>
+        <li>blockquote: marca uma seção de citação longa.</li>
+        <li>q: citação curta.</li>
+        <li>cite: marca substantivos próprios ou títulos de trabalho.</li>
+        <li>code: para escrever códigos fonte. </li>
+        <li>kbd: indicar teclas de ação.</li>
+        <li>pre: pré-formato.</li>
+    </ol>
+
+    <hr>
+    
+    <p>
+        Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Mauris ipsum dui, tristique eu pharetra ut, tincidunt sed erat. <br>
+        <em>Curabitur tincidunt</em> <small>tellus sed felis porta luctus</small>. Vivamus sodales <sub>vulputate</sub> <sup>tempus</sup>. Sed consectetur ac felis a eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque lorem dolor, molestie pellentesque dapibus eu, tempus vitae enim. <del cite="https://www.w3schools.com/tags/tag_del.asp" datetime="2022-09-02T19:03:01Z+3">Suspendizze potential.</del><ins>Suspendisse potenti.</ins>
+    </p>
+    <p>
+        O <abbr title="Hypertext Markup Language.">HTML</abbr> é uma linguagem de programação com hipertexto.
+    </p>
+
+    <address>
+        Rua Antonio Lobato, 1.035 <br>
+        Jaridm Florença <br>
+        Araras - SP
+    </address>
+
+    <hr>
+
+    <p>Veja como o texto pode ficar diferente:</p>
+    <ul type="square"> <!-- type pode ser cicle, disc ou square -->
+        <li>Da esquerda para direita:<bdo dir="ltr">DIREÇÃO DO TEXTO.</bdo></li>
+        <li>Da direita para esquerda:<bdo dir="rtl">DIREÇÃO DO TEXTO.</bdo></li>
+    </ul>
+
+    <blockquote cite="https://pt.wikipedia.org/wiki/Centro_Estadual_de_Educa%C3%A7%C3%A3o_Tecnol%C3%B3gica_Paula_Souza">
+        O <cite>Centro Estadual de Educação Tecnológica Paula Souza (CEETEPS)</cite> é uma autarquia do governo do estado de São Paulo, vinculada à Secretaria de Desenvolvimento Econômico, Ciência, Tecnologia e Inovação do Estado de São Paulo, que administra as 220 Escolas Técnicas (ETEC's) e as 66 Faculdades de Tecnologia (FATEC's) do estado. Foi criado pelo governador Abreu Sodré em 1969. O CEETEPS possui mais de 290 mil estudantes matriculados em cursos técnicos e superiores
+    </blockquote>
+
+    <p>
+        <q>De todas as pessoas do mundo, certamente você é uma delas</q> - Valérius Quintus
+    </p>
+    <code>
+        printf("Hello World"); <br>
+        printf("Deu certo?");
+    </code>
+
+    <marquee behavior="" direction="right">Teste de tag jacu!</marquee>
+    <hr>
+    <p>Tecle <kbd>ESC</kbd> para sair</p>
+
+    <pre>
+        Teste de       um        texto
+              numa            construção 
+          livre
+    </pre>
+</body>
+</html>
+
+
+Tags complexas: <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tags Complexas</title>
+</head>
+<body>
+    <h1>Tags Complexas</h1>
+
+    <img src="./img/cat-g34e058b79_640.jpg" alt="Animal felino fazendo dengo." title="From pixabay.com" height="250">
+
+     <img src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2022/10/etec-transparente.png" alt="Logotipo do Centro Paula Souza." title="From www.cps.sp.gov.br" height="250">
+
+    <br clear="all">
+    
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wn1uY7l7Bsw?controls=0&amp;start=399" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MsSIdmPwcXA?start=530" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+
+
+    <table>
+        <caption>Título da tabela</caption>
+        <thead>
+            <!-- Cabeçalho da tabela -->
+            <tr>
+                <th>Col 1</th> <th>Col 2</th> <th>Col 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Corpo da tabela -->
+            <tr>
+                <td>11</td> <td>12</td> <td>13</td>
+            </tr>
+            <tr>
+                <td>21</td> <td>22</td> <td>23</td>
+            </tr>
+            <tr>
+                <td>31</td> <td>32</td> <td>33</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- rodapé da tabela -->
+            <tr>
+                <td>fim 1</td> <td>fim 2</td> <td>fim 3</td>
+            </tr>
+        </tfoot>        
+    </table>
+
+
+    <br clear="all">
+
+    <iframe width="1200" height="500" src="./02-tags-principais.html">
+    </iframe>
+
+</body>
+</html>
+
+
+Table
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <!-- Título da tabela -->
+    <table border="1">
+
+        <caption>Vendas no semestre</caption>
+        <thead>
+            <!-- Cabeçalho da tabela -->
+            <tr>
+                <th colspan="2">Produto</th>
+                <th>1º Bim</th>
+                <th>2º Bim</th>
+                <th>3º Bim</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Corpo da tabela -->
+            <tr>
+                <td>Action Figure</td>
+                <td>FigureStar</td>
+                <td>1.200,00</td>
+                <td>2.200,00</td>
+                <td>1.800,00</td>
+            </tr>
+            <tr>
+                <td>Dados de RPG</td>
+                <td>RPG Place</td>
+                <td>800,00</td>
+                <td>950,00</td>
+                <td>780,00</td>
+            </tr>
+            <tr>
+                <td>Quebra-cabeça</td>
+                <td>Puzzle</td>
+                <td>3.500,00</td>
+                <td>4.200,00</td>
+                <td>3.900,00</td>
+            </tr>
+            <tr>
+                <td>Cubo Mágico</td>
+                <td>Rubs</td>
+                <td>8.900,00</td>
+                <td>12.400,00</td>
+                <td>9.950,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- rodapé da tabela -->
+            <tr>
+                <td rowspan="2" colspan="2">Total</td>
+                <td>14.000,00</td>
+                <td>19.750,00</td>
+                <td>16.430,00</td>
+            </tr>
+            <tr>
+                <td colspan="4">50.180,00</td>
+            </tr>
+        </tfoot>        
+    </table>
+</body>
+</html>
+
+==================================================================
+
